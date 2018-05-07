@@ -46,9 +46,9 @@ while(True):
       flags = cv2.CASCADE_SCALE_IMAGE
     )
     
-    # Set region of interest for smiles
+    # Set region of interest for eyse
     for (x, y, w, h) in detectEyesResults:
-      print("Detected {0} detectSmileResults".format(len(detectEyesResults)))
+      print("Detected {0} detectEyesResults".format(len(detectEyesResults)))
       
       # Draw a rectangle around the detectSmileResults
       cv2.rectangle(roi_color, (x, y), (x+w, y+h), (255, 0, 0), 1)
