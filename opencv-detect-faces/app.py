@@ -31,7 +31,7 @@ while(True):
 
   # Draw a rectangle around the detectFacesResults
   for (x, y, w, h) in detectFacesResults:
-    cv2.rectangle(frame, (x, y), (x+w, y+h), (0, 0, 255), 2)
+    cv2.rectangle(frame, (x, y), (x+w, y+h), (255, 0, 0), 2)
 #     cv2.putText(frame,"Face Detected",(x,y),cv2.FONT_HERSHEY_SIMPLEX,1,(0,0,255),2)
     
   # Display the resulting frame
