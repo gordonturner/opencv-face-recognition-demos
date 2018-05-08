@@ -3,7 +3,7 @@ import cv2
 # Create the video capture
 videoCapture = cv2.VideoCapture(0)
 
-# Use the face detection with smile detection together, otherwise, eyes EVERYWHERE.
+# Use the face detection with eye detection together, otherwise, eyes EVERYWHERE.
 
 # Create the haar cascades
 cascadeClassifierFaces = cv2.CascadeClassifier("haarcascade_frontalface_default.xml")
