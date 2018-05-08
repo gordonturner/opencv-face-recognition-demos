@@ -33,7 +33,7 @@ while(True):
     cv2.rectangle(frame, (x, y), (x+w, y+h), (0, 0, 255), 2)
 #     cv2.putText(frame,"Face Detected",(x,y),cv2.FONT_HERSHEY_SIMPLEX,1,(0,0,255),2)
 
-    # Use the current detectFacesResults as a region of interest and detect face
+    # Use the current detectFacesResults as a region of interest and detect eyes
     roi_gray = gray[y:y+h, x:x+w]
     roi_color = frame[y:y+h, x:x+w]
 
@@ -46,7 +46,7 @@ while(True):
       flags = cv2.CASCADE_SCALE_IMAGE
     )
     
-    # Set region of interest for eyse
+    # Set region of interest for eyes
     for (x, y, w, h) in detectEyesResults:
       print("Detected {0} detectEyesResults".format(len(detectEyesResults)))
       
